@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header>
+    <div class="welcomeText">
+        <span class="staticWelcome">Hey!</span>
+        <span class="typewrite"></span>
+    </div>
+  </header>
+    <main>
+
+        <div id="carousel" class="slider">
+    
+           <div class="hideLeft">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088545125245927599/Gr1zzly_The_vibrant_green_forest_is_filled_with_the_bright_moon_25d79580-64ba-4963-b417-5e96d3b5935c.png" id="1">
+          </div>
+    
+          <div class="prevLeftSecond">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088543823250079848/HENRY_john_wick_night_rain_in_Paris_ultrarealistic_8k_50ac11d6-85c7-4406-90f9-e674bd0df17c.png" id="2">
+          </div>
+    
+          <div class="prev">
+            <img src="https://cdn.discordapp.com/attachments/953413775149633536/1088521820212314182/Hollis_blobhttpsdiscord.com4615e4d7-43ad-4b07-a03d-5d8f346c8593_74210926-1eea-49e6-9947-e7b0521487f8.png" id="3">
+          </div>
+    
+          <div class="selected">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088550278854352896/adasienada_cosmonaut_on_big_planet_dark_ambient_planet_in_water_c6b48dfb-885f-42a7-aad0-65b4c23f0bac.png" id="4">
+          </div>
+    
+          <div class="next">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088545487524728942/elizabeth9219_a_victorian_tea_house_in_1880s_London_on_a_rainy__f567ac36-dc25-4864-9c3d-47f6e21a9ecb.png" id="5">
+          </div>
+    
+          <div class="nextRightSecond">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088548852740657312/adasienada_cold_dark_zimmer_frosty_cold_dark_1_lamp_in_the_midd_c70ffad6-d1f9-456a-ab65-a39f94332cb8.png" id="6">
+          </div>
+    
+          <div class="hideRight">
+            <img src="https://cdn.discordapp.com/attachments/1008571150873395220/1088551812350615702/adasienada_big_library_ambience_calm_quiet_some_warm_lamps_no_o_63deba11-cb52-46a8-8608-efa8151cf94c.png" id="7">
+          </div>
+
+        </div>
+
+        <div class="songStatus hidden playing" style="display: flex; align-items: center; justify-content: center; height: 50px;">
+          Playing
+        </div>
+
+        <div class="controlSection" style="display: flex; align-items: center; justify-content: center; height: 150px;">
+          <div class="songControls" style="background-color: rgb(33, 31, 43); width: 350px; height: 100px; border-radius: 8px;">
+            <div class="songInfo" style="display: flex; align-items:end; justify-content: center; height: 40%;">
+
+            </div>
+            <div class="controls" style="display: flex; align-items: center; justify-content: center; height: 60%;">
+              <input type="range" oninput="volumeMaster(this.value)">
+            <button class="songPlay">Play</button>
+            </div>
+          </div>
+        </div>
+
+      </main>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="script.js"></script>
+</body>
+</html>
